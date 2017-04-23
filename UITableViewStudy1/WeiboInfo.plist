@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>zhouzezhou.jpg</string>
+		<key>userName</key>
+		<string>他们叫我周周周</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>OS开发领域有很多对象间数据的传递方式，我看到的大多数App在网络层所采用的方案主要集中于这三种：Delegate，Notification，Block。KVO和Target-Action我目前还没有看到有使用的。
+目前我知道边锋主要是采用的block，大智慧主要采用的是Notification，安居客早期以Block为主，后面改成了以Delegate为主...</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>wuxiaohu.jpg</string>
+		<key>userName</key>
+		<string>丨稀里糊涂丨的我</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>万事不能强求，该舍弃的慢慢淡忘；未来？要努力就要坚持不懈。</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>maobo.jpg</string>
+		<key>userName</key>
+		<string>兜兜是波子汽水</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>世上只有10种人，懂二进制的，和不懂的。</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>zhouting.jpg</string>
+		<key>userName</key>
+		<string>周婷TingDE幸福生活</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>如果有一天我突然不喜欢你了。终于不用给你喜欢我的机会了</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>zhouzezhou.jpg</string>
+		<key>userName</key>
+		<string>他们叫我周周周</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>OS开发领域有很多对象间数据的传递方式，我看到的大多数App在网络层所采用的方案主要集中于这三种：Delegate，Notification，Block。KVO和Target-Action我目前还没有看到有使用的。
+目前我知道边锋主要是采用的block，大智慧主要采用的是Notification，安居客早期以Block为主，后面改成了以Delegate为主...</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>wuxiaohu.jpg</string>
+		<key>userName</key>
+		<string>丨稀里糊涂丨的我</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>万事不能强求，该舍弃的慢慢淡忘；未来？要努力就要坚持不懈。</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>maobo.jpg</string>
+		<key>userName</key>
+		<string>兜兜是波子汽水</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>世上只有10种人，懂二进制的，和不懂的。</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>zhouting.jpg</string>
+		<key>userName</key>
+		<string>周婷TingDE幸福生活</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>如果有一天我突然不喜欢你了。终于不用给你喜欢我的机会了</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>zhouzezhou.jpg</string>
+		<key>userName</key>
+		<string>他们叫我周周周</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>OS开发领域有很多对象间数据的传递方式，我看到的大多数App在网络层所采用的方案主要集中于这三种：Delegate，Notification，Block。KVO和Target-Action我目前还没有看到有使用的。
+目前我知道边锋主要是采用的block，大智慧主要采用的是Notification，安居客早期以Block为主，后面改成了以Delegate为主...</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>wuxiaohu.jpg</string>
+		<key>userName</key>
+		<string>丨稀里糊涂丨的我</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>万事不能强求，该舍弃的慢慢淡忘；未来？要努力就要坚持不懈。</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>profileImageUrl</key>
+		<string>maobo.jpg</string>
+		<key>userName</key>
+		<string>兜兜是波子汽水</string>
+		<key>mbtype</key>
+		<string>mbtype1.png</string>
+		<key>time</key>
+		<string>22:22</string>
+		<key>device</key>
+		<string>iPhone 8</string>
+		<key>text</key>
+		<string>世上只有10种人，懂二进制的，和不懂的。</string>
+	</dict>
+</array>
+</plist>
