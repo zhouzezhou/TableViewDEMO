@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) NSMutableArray *myContacts;
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
+@property (nonatomic, assign) BOOL isInsert; // 用以区分是删除操作还是添加操作
 
 @end

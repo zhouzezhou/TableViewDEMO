@@ -102,7 +102,11 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="hkz-OZ-4GZ">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="TF8-7W-dRx"/>
+                            <barButtonItem systemItem="add" id="TF8-7W-dRx">
+                                <connections>
+                                    <action selector="clickAddBarItem:" destination="Jfi-v6-KnT" id="ttF-Vn-BI3"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem systemItem="trash" id="spF-iF-nzh">
                                 <connections>
                                     <action selector="clickTrachBarItem:" destination="Jfi-v6-KnT" id="QuS-Qb-TBm"/>

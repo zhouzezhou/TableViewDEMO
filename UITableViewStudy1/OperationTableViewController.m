@@ -15,7 +15,7 @@
 {
     NSMutableArray *_myContacts;
     NSIndexPath *_selectedIndexPath;
-    
+    BOOL _isInsert;
 }
 
 
@@ -42,10 +42,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)clickTrachBarItem:(UIBarButtonItem *)sender {
-    NSLog(@"clickTrachBarItem");
-    [self setEditing:!self.isEditing animated:YES];
-}
+
 
 -(void) loadData
 {
@@ -164,7 +161,21 @@
     return temp.contacts.count;
 }
 
-// cell 向左滑动，右侧滑出删除按钮
+- (IBAction)clickTrachBarItem:(UIBarButtonItem *)sender {
+    NSLog(@"clickTrachBarItem");
+    // 赋值一定要写在setEditing之前
+    _isInsert = NO;
+    [self setEditing:!self.isEditing animated:YES];
+    
+}
+- (IBAction)clickAddBarItem:(id)sender {
+    NSLog(@"clickAddBarItem");
+    // 赋值一定要写在setEditing之前
+    _isInsert = YES;
+    [self setEditing:!self.isEditing animated:YES];
+}
+
+// cell 向左滑动，右侧滑出删除按钮 和 添加按钮
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"commitEditingStyle");
@@ -183,7 +194,32 @@
             [_myContacts removeObject:group];
             [tableView reloadData];
         }
-    }    
+    }
+    else if(editingStyle == UITableViewCellEditingStyleInsert)
+    {
+        NSLog(@"UITableViewCellEditingStyleInsert");
+        ZzzContact2 *newContact = [[ZzzContact2 alloc] init];
+        newContact.firstName = contact.firstName;
+        newContact.lastName = contact.lastName;
+        newContact.phoneNumber = contact.phoneNumber;
+        newContact.switchStatus = contact.switchStatus;
+        
+        [group.contacts insertObject:newContact atIndex:indexPath.row];
+        // 注意，使用insertRowsAtIndexPaths来更新tableView,而不是reloadRowsAtIndexPaths方法
+        [tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+    }
+}
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(_isInsert)
+    {
+        return UITableViewCellEditingStyleInsert;
+    }
+    else
+    {
+        return UITableViewCellEditingStyleDelete;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -258,6 +294,22 @@
         [indexs addObject:[group.name substringToIndex:1]];
     }
     return indexs;
+}
+
+// 排序：改变cell顺序
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+    ZzzContactGroup2 *sourceGroup = _myContacts[sourceIndexPath.section];
+    ZzzContact2 *sourceContact = sourceGroup.contacts[sourceIndexPath.row];
+    ZzzContactGroup2 *destinationGroup = _myContacts[destinationIndexPath.section];
+    
+    [sourceGroup.contacts removeObject:sourceContact];
+    if(sourceGroup.contacts.count == 0)
+    {
+        [_myContacts removeObject:sourceGroup];
+        [tableView reloadData];
+    }
+    [destinationGroup.contacts insertObject:sourceContact atIndex:destinationIndexPath.row];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
