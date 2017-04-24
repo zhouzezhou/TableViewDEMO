@@ -46,8 +46,16 @@
                                     <segue destination="ewr-w5-MQf" kind="show" id="9e5-ps-nAB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlY-Kp-oQC">
+                                <rect key="frame" x="35" y="458" width="304" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.97723737107196496" blue="0.15101114380672287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="TableViewSearchBar"/>
+                                <connections>
+                                    <segue destination="ibu-8G-33W" kind="show" id="ib1-SB-3YA"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUi-sC-VVf">
-                                <rect key="frame" x="54" y="435" width="256" height="30"/>
+                                <rect key="frame" x="59" y="387" width="256" height="30"/>
                                 <color key="backgroundColor" red="0.024915610101364227" green="1" blue="0.007454266036975743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="TableViewOperation">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,11 +67,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FlY-Kp-oQC" secondAttribute="trailing" constant="20" id="367-Ep-4Vp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mUi-sC-VVf" secondAttribute="trailing" constant="20" id="Ga9-ey-4bR"/>
                             <constraint firstItem="aGb-2w-ZyG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HMD-za-u3E"/>
                             <constraint firstItem="mUi-sC-VVf" firstAttribute="top" secondItem="aGb-2w-ZyG" secondAttribute="bottom" constant="40" id="Pjd-us-1w6"/>
                             <constraint firstItem="mUi-sC-VVf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TgR-PT-IY9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aGb-2w-ZyG" secondAttribute="trailing" constant="20" id="ePe-M0-f89"/>
+                            <constraint firstItem="FlY-Kp-oQC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gE2-02-9Sk"/>
+                            <constraint firstItem="FlY-Kp-oQC" firstAttribute="top" secondItem="mUi-sC-VVf" secondAttribute="bottom" constant="40" id="glb-ZG-OJ5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="N0X-S0-ubt" secondAttribute="trailing" constant="20" id="nrL-8i-oMR"/>
                             <constraint firstItem="N0X-S0-ubt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qor-1k-chd"/>
                             <constraint firstItem="aGb-2w-ZyG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uBo-Ao-mx3"/>
@@ -147,6 +158,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MkN-Om-gXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1911" y="490"/>
+        </scene>
+        <!--Search Bar Table View Controller-->
+        <scene sceneID="Ieh-8t-s53">
+            <objects>
+                <tableViewController storyboardIdentifier="SearchBarTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ibu-8G-33W" customClass="SearchBarTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="L74-TK-qNw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vMV-BT-Rcd">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vMV-BT-Rcd" id="JgW-eD-6ac">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ibu-8G-33W" id="Sc1-xE-cu8"/>
+                            <outlet property="delegate" destination="ibu-8G-33W" id="CYB-5F-pE1"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Mn-tv-s9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-551"/>
         </scene>
         <!--Dynamic Table View Controller-->
         <scene sceneID="4eE-9r-7KM">

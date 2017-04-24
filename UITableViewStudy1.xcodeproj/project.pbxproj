@@ -25,6 +25,7 @@
 		5EBA0E5A1EACE58600D06E0C /* OperationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA0E591EACE58600D06E0C /* OperationTableViewController.m */; };
 		5EBA0E5D1EACE5F200D06E0C /* ZzzContact2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA0E5C1EACE5F200D06E0C /* ZzzContact2.m */; };
 		5EBA0E601EACE5FF00D06E0C /* ZzzContactGroup2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA0E5F1EACE5FF00D06E0C /* ZzzContactGroup2.m */; };
+		5ED82ECE1EAE42DE00BB13A1 /* SearchBarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED82ECD1EAE42DE00BB13A1 /* SearchBarTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		5EBA0E5C1EACE5F200D06E0C /* ZzzContact2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzzContact2.m; sourceTree = "<group>"; };
 		5EBA0E5E1EACE5FF00D06E0C /* ZzzContactGroup2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzzContactGroup2.h; sourceTree = "<group>"; };
 		5EBA0E5F1EACE5FF00D06E0C /* ZzzContactGroup2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzzContactGroup2.m; sourceTree = "<group>"; };
+		5ED82ECC1EAE42DE00BB13A1 /* SearchBarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarTableViewController.h; sourceTree = "<group>"; };
+		5ED82ECD1EAE42DE00BB13A1 /* SearchBarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +133,10 @@
 		5E9BF2311EA79835000DA497 /* UITableViewStudy1 */ = {
 			isa = PBXGroup;
 			children = (
-				5EBA0E551EACE3FC00D06E0C /* TableView1 */,
-				5EBA0E561EACE41B00D06E0C /* TableView2 */,
-				5EBA0E571EACE42500D06E0C /* TableView3 */,
+				5EBA0E551EACE3FC00D06E0C /* TableView1_system */,
+				5EBA0E561EACE41B00D06E0C /* TableView2_custom */,
+				5EBA0E571EACE42500D06E0C /* TableView3_opeartion */,
+				5ED82ECB1EAE41BB00BB13A1 /* TableView4_searchBar */,
 				5E9BF2351EA79835000DA497 /* AppDelegate.h */,
 				5E9BF2361EA79835000DA497 /* AppDelegate.m */,
 				5E9BF2381EA79835000DA497 /* ViewController.h */,
@@ -213,31 +217,31 @@
 			name = ModelWeibo;
 			sourceTree = "<group>";
 		};
-		5EBA0E551EACE3FC00D06E0C /* TableView1 */ = {
+		5EBA0E551EACE3FC00D06E0C /* TableView1_system */ = {
 			isa = PBXGroup;
 			children = (
 				5E9BF2691EA7B70C000DA497 /* ModelContact */,
 				5E9BF2651EA79B05000DA497 /* UITableViewStudy1 */,
 			);
-			name = TableView1;
+			name = TableView1_system;
 			sourceTree = "<group>";
 		};
-		5EBA0E561EACE41B00D06E0C /* TableView2 */ = {
+		5EBA0E561EACE41B00D06E0C /* TableView2_custom */ = {
 			isa = PBXGroup;
 			children = (
 				5EBA0E451EACA6BD00D06E0C /* ModelWeibo */,
 				5EBA0E411EACA3F900D06E0C /* TableViewCustomCell */,
 			);
-			name = TableView2;
+			name = TableView2_custom;
 			sourceTree = "<group>";
 		};
-		5EBA0E571EACE42500D06E0C /* TableView3 */ = {
+		5EBA0E571EACE42500D06E0C /* TableView3_opeartion */ = {
 			isa = PBXGroup;
 			children = (
 				5EBA0E621EACE61D00D06E0C /* ModelContact2 */,
 				5EBA0E611EACE60900D06E0C /* UITableViewStudy2 */,
 			);
-			name = TableView3;
+			name = TableView3_opeartion;
 			sourceTree = "<group>";
 		};
 		5EBA0E611EACE60900D06E0C /* UITableViewStudy2 */ = {
@@ -258,6 +262,15 @@
 				5EBA0E5F1EACE5FF00D06E0C /* ZzzContactGroup2.m */,
 			);
 			name = ModelContact2;
+			sourceTree = "<group>";
+		};
+		5ED82ECB1EAE41BB00BB13A1 /* TableView4_searchBar */ = {
+			isa = PBXGroup;
+			children = (
+				5ED82ECC1EAE42DE00BB13A1 /* SearchBarTableViewController.h */,
+				5ED82ECD1EAE42DE00BB13A1 /* SearchBarTableViewController.m */,
+			);
+			name = TableView4_searchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +420,7 @@
 				5E9BF26C1EA7B738000DA497 /* ZzzContact.m in Sources */,
 				5EBA0E5D1EACE5F200D06E0C /* ZzzContact2.m in Sources */,
 				5E9BF2681EA79B5D000DA497 /* DynamicTableViewController.m in Sources */,
+				5ED82ECE1EAE42DE00BB13A1 /* SearchBarTableViewController.m in Sources */,
 				5EBA0E2A1EAB8E2A00D06E0C /* ZzzContactGroup.m in Sources */,
 				5EBA0E5A1EACE58600D06E0C /* OperationTableViewController.m in Sources */,
 			);
